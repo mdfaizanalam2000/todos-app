@@ -1,0 +1,118 @@
+.outer-div {
+    min-height: 95vh;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-div {
+    min-height: 70vh;
+    max-height: 70vh;
+    width: 50%;
+    background-color: wheat;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+ol {
+    max-height: 45vh;
+    overflow: auto;
+}
+
+.inner-div h1 {
+    text-align: center;
+    background-color: purple;
+    color: wheat;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+.input input {
+    width: 40%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid purple;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    background: transparent;
+}
+
+.input button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.input button:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+ol li {
+    font-size: 20px;
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.todo button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: purple;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.todo button:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: auto;
+    font-weight: 500;
+    min-height: 5vh;
+}
+
+/* responsiveness code */
+@media only screen and (max-width: 700px) {
+    .inner-div {
+        min-height: 80vh;
+        max-height: 80vh;
+        width: 90%;
+    }
+
+    .input input {
+        width: 60%;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    ol {
+        max-height: 55vh;
+    }
+}
